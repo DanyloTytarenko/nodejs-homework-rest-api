@@ -7,6 +7,7 @@ const validateBody = schema => {
         next(HttpError(400, 'missing field favorite'));
       }
 
+
       next(HttpError(400, 'missing fields'));
     }
 
