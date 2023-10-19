@@ -22,17 +22,14 @@ const addSchema = Joi.object({
         'Field {#label} may contain only digital, [(], [)] or [-] ',
       'any.required': 'missing required {#label} field',
     }),
-
   favorite: Joi.boolean(),
 });
 
 const updateFavoriteSchema = Joi.object({
   favorite: Joi.boolean().required(),
-
 });
 
 module.exports = {
   addSchema,
   updateFavoriteSchema,
-
 };
